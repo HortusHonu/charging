@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_21_204353) do
+ActiveRecord::Schema.define(version: 2019_02_21_210710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "charges", force: :cascade do |t|
-    t.decimal "amount"
+    t.decimal "amount", precision: 5, scale: 2
     t.string "currency"
     t.boolean "paid"
     t.boolean "disputed"

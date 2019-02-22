@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-# Coding Challenge for Brilliant Chemistry
-
-#### Ruby Version:
-* 2.5.1
-
-#### Rails Version:
-* 5.2.2
-
-#### Database
-* Postgresql
-
-### Test Suite:
-* Rspec 3.8.0 and Capybara 
-
-#### Notes:
-
-* Setup app with:
-~~~
-bundle install
-~~~
-
-* Configure database with 
-~~~
-rake db:create rake db:migrate rake db:seed
-~~~
-
-* Run tests with
-~~~
-bundle exec rspec
-~~~
-=======
 # Rails Programming Task
 
 ### Please complete the following steps.
@@ -129,4 +97,3 @@ Create the following tests:
 ## Once Complete
 1. Commit and Push your code to your new repository
 2. Send us a pull request, we will review your code and get back to you
->>>>>>> upstream/master

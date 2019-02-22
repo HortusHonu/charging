@@ -1,24 +1,30 @@
-# README
+# Coding Challenge for Brilliant Chemistry
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Ruby Version:
+* 2.5.1
 
-Things you may want to cover:
+#### Rails Version:
+* 5.2.2
 
-* Ruby version
+#### Database
+* Postgresql
 
-* System dependencies
+### Test Suite:
+* Rspec 3.8.0 and Capybara 
 
-* Configuration
+#### Notes:
 
-* Database creation
+* Setup app with:
+~~~
+bundle install
+~~~
 
-* Database initialization
+* Configure database with 
+~~~
+rake db:create rake db:migrate rake db:seed
+~~~
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run tests with
+~~~
+bundle exec rspec
+~~~

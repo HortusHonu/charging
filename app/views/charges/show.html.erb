@@ -2,7 +2,7 @@
 
 <p>
   <strong>Amount:</strong>
-  <%= @charge.amount %>
+  <%= number_to_currency(@charge.amount) %>
 </p>
 
 <p>
@@ -27,7 +27,7 @@
 
 <p>
   <strong>Customer:</strong>
-  <%= @charge.customer %>
+  <%= @charge.customer.last_name %>, <%= @charge.customer.first_name %>
 </p>
 
 <%= link_to 'Edit', edit_charge_path(@charge) %> |

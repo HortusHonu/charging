@@ -35,3 +35,38 @@
 <br>
 
 <%= link_to 'New Charge', new_charge_path %>
+
+<br><br>
+
+<h1>Failed Charges</h1>
+
+  <ul id="failed">
+    <% @charges.each do |failed| %>
+      <% if (failed.paid == false) && (failed.disputed == false) %>
+        <li><%= failed.customer.first_name %> <%= failed.customer.last_name %> has a failed charge of 
+        <%= number_to_currency(failed.amount) %> on <%= failed.updated_at.strftime("%m-%d-%Y") %></li>
+      <% end %>
+    <% end %>
+  </ul>
+
+<h1>Disputed Charges</h1>
+
+  <ul id="disputed">
+    <% @charges.each do |disputed| %>
+      <% if disputed.disputed == true %>
+        <li><%= disputed.customer.first_name %> <%= disputed.customer.last_name %> has a disputed charge of 
+        <%= number_to_currency(disputed.amount) %> on <%= disputed.updated_at.strftime("%m-%d-%Y") %></li>
+      <% end %>
+    <% end %>
+  </ul>
+
+<h1>Successful Charges</h1>
+
+  <ul id="successful">
+    <% @charges.each do |successful| %>
+      <% if successful.paid == true %>
+        <li><%= successful.customer.first_name %> <%= successful.customer.last_name %> has a successful charge of 
+        <%= number_to_currency(successful.amount) %> on <%= successful.updated_at.strftime("%m-%d-%Y") %></li>
+      <% end %>
+    <% end %>
+  </ul>

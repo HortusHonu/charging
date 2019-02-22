@@ -112,7 +112,7 @@ puts "2 failed transactions created for customer 4"
   Charge.create!(
     amount: 78.89,
     currency: "usd",
-    paid: true,
+    paid: false,
     disputed: true,
     refunded: false,
     customer_id: 1
@@ -124,7 +124,7 @@ puts "3 disputed transactions created for customer 1"
   Charge.create!(
     amount: 89.90,
     currency: "usd",
-    paid: true,
+    paid: false,
     disputed: true,
     refunded: false,
     customer_id: 2

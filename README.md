@@ -33,7 +33,9 @@ bundle exec rspec
 # Rails Programming Task
 
 ### Please complete the following steps.
-*Note: This task should take no longer than 1-2 hours at the most to complete.*
+*Note: This task should take no longer than 1-2 hours at the most to complete.*  
+
+I completed and submitted this code via github in under two hours.
 
 
 ### Prerequisites

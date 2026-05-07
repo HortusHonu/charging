@@ -1,3 +1,5 @@
+My solution to the Brilliant Chemistry Coding Challenge
+
 <<<<<<< HEAD
 # Coding Challenge for Brilliant Chemistry
 

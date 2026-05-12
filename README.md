@@ -1,4 +1,5 @@
-My solution to the Brilliant Chemistry Coding Challenge
+My solution to the Brilliant Chemistry Coding Challenge:
+https://github.com/digerata/rails-challenge
 
 <<<<<<< HEAD
 # Coding Challenge for Brilliant Chemistry
